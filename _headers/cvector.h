@@ -3,6 +3,8 @@
 /*          cvector.h -- generic c++ vector implementation          */
 /* Ver. 1.00                  09AUG2024              CrateOfThunder */
 /* ---------------------------------------------------------------- */
+#ifndef _CVECTOR_H
+#define _CVECTOR_H
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -50,3 +52,5 @@ int v_empty(Vec *v);
 
 /* Clear vector */
 void v_clear(Vec *v);
+
+#endif
