@@ -3,6 +3,8 @@
 /*          strrox.h -- string bit rotation implementation          */
 /* Ver. 1.00                  02AUG2024              CrateOfThunder */
 /* ---------------------------------------------------------------- */
+#ifndef _STRROX_H
+#define _STRROX_H
 #include <stddef.h>
 
 static unsigned char _ror11(unsigned char a, unsigned char b)
@@ -24,3 +26,5 @@ static void _sll(unsigned char *b)
 { *b <<= 1;  return; }
 
 void strrox(void *v, size_t size, size_t nbits, int shift);
+
+#endif
